@@ -28,26 +28,14 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo doloribus in repellat itaque pariatur et aliquam similique rerum exercitationem? Dolores dolor aut quidem itaque unde laborum atque magni blanditiis consequatur!',
             price,
+            geometry: {
+                type: "Point",
+                coordinates: [-73.9866, 40.7306]
+            },
             images: [
                 {
                     url: 'https://res.cloudinary.com/dxcqkmbhd/image/upload/v1622515061/YelpCamp/ctimenc9uvqgj1fhwkcl.jpg',
                     filename: 'YelpCamp/ctimenc9uvqgj1fhwkcl'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dxcqkmbhd/image/upload/v1622515062/YelpCamp/dsci5bff5zmh3kxourht.jpg',
-                    filename: 'YelpCamp/dsci5bff5zmh3kxourht'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dxcqkmbhd/image/upload/v1622515064/YelpCamp/yzgz72wj4jw9qpu3ppzx.jpg',
-                    filename: 'YelpCamp/yzgz72wj4jw9qpu3ppzx'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dxcqkmbhd/image/upload/v1622515065/YelpCamp/z885shkaudnpvqgjvooo.jpg',
-                    filename: 'YelpCamp/z885shkaudnpvqgjvooo'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dxcqkmbhd/image/upload/v1622515065/YelpCamp/bkycp0h4uktrl7gla2lz.jpg',
-                    filename: 'YelpCamp/bkycp0h4uktrl7gla2lz'
                 }
             ]
         })
