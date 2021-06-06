@@ -1,6 +1,6 @@
 <% layout('layouts/boilerplate') %>
 
-    <div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
                 <div class="card shadow">
@@ -20,8 +20,14 @@
                                 <input class="form-control" type="password" name="password" id="password" required>
                                 <div class="valid-feedback">Looks Good!</div>
                             </div>
-                            <div class="d-grid gap-2">
+                            <div class="d-grid gap-2 mb-3">
                                 <button class="btn btn-success">Login</button>
+                            </div>
+                            <div>
+                                <p>
+                                    Don't have an account? <a href="/register" style="text-decoration: none;">Make one
+                                        now!</a>
+                                </p>
                             </div>
                         </form>
                     </div>
